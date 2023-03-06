@@ -1,4 +1,4 @@
-function initScrollSuave() {
+export default function initScrollSuave() {
   const linksInternos = document.querySelectorAll('.links a[href^="#"]');
   const nextPage = document.querySelector('.nextpage a');
   if (linksInternos.length) {
@@ -19,4 +19,3 @@ function initScrollSuave() {
     nextPage.addEventListener('click', ScrolToSection);
   }
 }
-initScrollSuave();
