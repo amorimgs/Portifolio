@@ -63,6 +63,6 @@ function initScrollSuave() {
   }
 }
 
-initscrollSuave();
+initScrollSuave();
 initmenuMobile();
 initAnimaHeader();
