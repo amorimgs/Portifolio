@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/assets/svg/redux.svg" type="image/x-icon">
   <link rel="stylesheet" href="/src/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,16 +67,16 @@
     </section>
     <section id="formacao" class="container">
       <h2>Formação</h2>
-      <p>Atualmente estou cursando superior em Sistemas de Informaçao junto com o FIT (Formaçao Intensiva Trybe) - Desenvolvimento Full-Stack. </p>
-      <p>Já concluir outros cursos com foco em Front-End e UI e UX Design e sempre me mantenho atualizado sobre os assuntos de desenvolvimento WEB. </p>
-      <div>
-        <div>
+      <p class="formacaoDescription">Atualmente estou cursando superior em Sistemas de Informaçao junto com o FIT (Formaçao Intensiva Trybe) - Desenvolvimento Full-Stack. </p>
+      <p class="formacaoDescription">Já concluir outros cursos com foco em Front-End e UI e UX Design e sempre me mantenho atualizado sobre os assuntos de desenvolvimento WEB. </p>
+      <div class="inforFormacao">
+        <div class="cardsFormacao">
           <div class="cardFormacao">
             <div>
               <p>Intensivo</p>
               <p>1.500 horas</p>
             </div>
-            <p>Desenvolvimento Full-Stack</p>
+            <p class="nomeCurso">Desenvolvimento Full-Stack</p>
             <div>
               <p>Trybe</p>
               <p>Conclusão 08/2024</p>
@@ -86,14 +87,14 @@
               <p>Superior</p>
               <p>4 anos</p>
             </div>
-            <p>Sistemas de Informação</p>
+            <p class="nomeCurso">Sistemas de Informação</p>
             <div>
               <p>DOCTUM</p>
               <p>Conclusão 2027</p>
             </div>
           </div>
         </div>
-        <div>
+        <div class="outrosCursos">
           <p>Outros cursos</p>
           <ul>
             <li>
@@ -109,35 +110,51 @@
         </div>
       </div>
     </section>
-    <section id="projetos" class="container">\
+    <section id="projetos" class="container">
       <h2>Projetos</h2>
-      <p>Projetos desenvolvidos ao longo do tempo onde coloquei tudo que aprendi em prática!</p>
-      <div>
+      <p>Projetos desenvolvidos ao longo do tempo onde coloquei o que aprendi em prática!</p>
+      <div class="projetos">
         <div class="cardProjeto">
-          <img src="src/assets/svg/" alt="imagem-do-projeto">
-          <p>Nome do projeto</p>
-          <p>Uma breve descrição do projeto, o que foi desenvolvido e sua finalidade</p>
-          <div>
-            <a href="" target="_blank">Repositorio</a>
-            <a href="" target="_blank">Site</a>
-          </div>
+          <img src="src/assets/Captura de tela de 2023-12-20 11-42-46.png" alt="imagem-do-projeto">
+          <p class="pojectName">Champ-Info</p>
+          <p class="projectDescription">Projeto desenvolvido em React, ultilizando a API da RiotGames onde temos uma listagem de campeões e podemos ver detalhes a respeito deles.</p>
+          <a class="projectLinks" href="" target="_blank">Repositorio</a>
+        </div>
+        <div class="cardProjeto">
+          <img src="src/assets/Captura de tela de 2023-12-20 11-42-46.png" alt="imagem-do-projeto">
+          <p class="pojectName">Champ-Info</p>
+          <p class="projectDescription">Projeto desenvolvido em React, ultilizando a API da RiotGames onde temos uma listagem de campeões e podemos ver detalhes a respeito deles.</p>
+          <a class="projectLinks" href="" target="_blank">Repositorio</a>
+        </div>
+        <div class="cardProjeto">
+          <img src="src/assets/Captura de tela de 2023-12-20 11-42-46.png" alt="imagem-do-projeto">
+          <p class="pojectName">Champ-Info</p>
+          <p class="projectDescription">Projeto desenvolvido em React, ultilizando a API da RiotGames onde temos uma listagem de campeões e podemos ver detalhes a respeito deles.</p>
+          <a class="projectLinks" href="" target="_blank">Repositorio</a>
         </div>
       </div>
+      <button type="button" class="projectButton">Ver Mais</button>
     </section>
-    <section id="contato" class="container">
-      <h2>Contato</h2>
-      <p>Procura alguém com disciplina, dedicação e determinação... É você acabou de encontrar! Está ai meu contato, chama lá e bora trocar uma idéia...</p>
-      <ul>
-        <li><img src="src/assets/svg/email.svg" alt="email">
-          <p>gabrielsouzamorim@gmail.com</p>
-        </li>
-        <li><img src="src/assets/svg/phone.svg" alt="email">
-          <p>+55 33 98859-9460</p></li>
-        <li><img src="src/assets/svg/linkedin.svg" alt="email">
-          <p>Linkedin.com/amorimgs</p></li>
-        <li><img src="src/assets/svg/github.svg" alt="email">
-          <p>Github.com/amorimgs</p></li>
-      </ul>
+    <section id="contato" >
+      <div  class="container">
+        <h2>Contato</h2>
+        <p>Procura alguém com disciplina, dedicação e determinação... Você acabou de encontrar! Está ai meu contato, chama lá e bora trocar uma idéia.</p>
+        <ul>
+          <li>
+            <img src="src/assets/svg/email.svg" alt="email">
+            <a target="_blank" href="mailto:gabrielsouzamorim@gmail.com">gabrielsouzamorim@gmail.com</a>
+          </li>
+          <li>
+            <img src="src/assets/svg/phone.svg" alt="email">
+            <a target="_blank" href="tel:+55 33 98859-9460">+55 33 98859-9460</a>
+          <li>
+            <img src="src/assets/svg/linkedin.svg" alt="email">
+            <a target="_blank" href="https://www.linkedin.com/in/amorimgs/">linkedin</a>
+          <li>
+            <img src="src/assets/svg/github.svg" alt="email">
+            <a target="_blank" href="https://github.com/amorimgs">github.com/amorimgs</a>
+        </ul>
+      </div>
     </section>
   </main>
   <footer>
