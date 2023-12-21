@@ -87,6 +87,7 @@ h1 {
   padding-top: 150px;
   max-width: 600px;
   margin: 0 auto;
+  height: 400px;
 }
 
 .homeContainer {
@@ -97,8 +98,14 @@ h1 {
 }
 
 .iconHome {
-  width: 50px;
-  margin: 0 20px;
+  width: 30px;
+  margin: 0 30px;
+  transition: 0.3s;
+}
+
+.iconHome:hover {
+  scale: 2;
+  transition: 0.3s;
 }
 
 #sobre {
@@ -410,4 +417,10 @@ footer {
   font-family: 'IBM Plex Mono';
   padding: 10px;
   font-weight: bold;
+}
+
+/* active link */
+.activeLink {
+  color: #6A6A6A;
+  border-bottom: 1px solid #6A6A6A;
 }
