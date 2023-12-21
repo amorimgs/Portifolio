@@ -295,14 +295,20 @@ h1 {
   height: 400px;
   display: flex;
   flex-direction: column;
-  border-radius: 4px 45px 4px 45px;
-  box-shadow: 0 0 16px 1px #000003;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 0 10px 1px #000003;
+  transition: 0.3s;
 }
 
+.cardProjeto:hover {
+  scale: 1.05;
+  box-shadow: 0 0 16px 1px #000003;
+  transition: 0.3s;
+}
 
 .cardProjeto img {
   max-width: 270px;
-  border-radius: 4px 45px 0 45px;
+  border-radius: 4px 4px 0 0px;
 }
 
 .pojectName {
