@@ -1,13 +1,7 @@
 const initScrollSuave = () => {
-  const ScrolToSection = (event, links) => {
+  const ScrolToSection = (event) => {
     event.preventDefault();
     const href = event.currentTarget.getAttribute('href');
-    links.forEach((el)=>{
-      el.classList.remove('activeLink');
-      if(href === el.getAttribute('href') && href !== '#home') {
-        el.classList.add('activeLink');
-      }
-    });
     const section = document.querySelector(href);
     section.scrollIntoView({
       behavior: 'smooth',
@@ -19,7 +13,7 @@ const initScrollSuave = () => {
   if (linksInternos.length) {
     linksInternos.forEach((i) => {
       i.addEventListener('click', (event)=>{
-        ScrolToSection(event, linksInternos);
+        ScrolToSection(event);
       } );
     });
   }
@@ -57,6 +51,27 @@ const initAnimaSobre = () => {
   window.addEventListener('scroll', animaSobre);
 };
 
+const initAnimaLinks = () => {
+  const animaLinks = () => {
+    const linksInternos = document.querySelectorAll('a[href^="#"]');
+    if (linksInternos.length > 0) {
+      linksInternos.forEach((link)=>{
+        if (link.hash !== '#home') {
+          link.classList.remove('activeLink');
+          const section = document.querySelector(link.hash);
+          const sectionTop = section.getBoundingClientRect().top;
+          if (sectionTop > -680 && sectionTop < 120) {
+            link.classList.add('activeLink');
+          } 
+        }
+      });
+  
+    }
+  };
+  window.addEventListener('scroll', animaLinks);
+};
+
+initAnimaLinks();
 initScrollSuave();
 initTitleAnimation();
 initAnimaSobre();
