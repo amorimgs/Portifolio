@@ -20,6 +20,7 @@ body {
   position: fixed;
   top: 0;
   background-color: #EFEFEF;
+  z-index: 1000;
 }
 
 .headerContainer {
@@ -430,4 +431,17 @@ footer {
 .activeLink {
   color: #6A6A6A;
   border-bottom: 1px solid #6A6A6A;
+}
+
+/* Anima section sobre */
+
+.sobre{
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+.activeSobre {
+  opacity: 1;
+  transition: .8s  ;
+  transform: translateX(0);
 }
