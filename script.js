@@ -60,7 +60,7 @@ const initAnimaLinks = () => {
           link.classList.remove('activeLink');
           const section = document.querySelector(link.hash);
           const sectionTop = section.getBoundingClientRect().top;
-          if (sectionTop > -680 && sectionTop < 120) {
+          if (sectionTop > -650 && sectionTop < 140) {
             link.classList.add('activeLink');
           } 
         }
