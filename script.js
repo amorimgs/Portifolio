@@ -71,8 +71,25 @@ const initAnimaLinks = () => {
   window.addEventListener('scroll', animaLinks);
 };
 
+const initAnimaSkils = () => {
+  const skils = document.querySelectorAll('.listSkils li');
+  if (skils.length > 0) {
+    skils.forEach(li => {
+      li.addEventListener('mouseenter', () =>{
+        li.children[1].classList.add('skillActive');
+      });
+    });
+    skils.forEach(li => {
+      li.addEventListener('mouseleave', () =>{
+        li.children[1].classList.remove('skillActive');
+      });
+    });
+  }
+};
+ 
+
 initAnimaLinks();
 initScrollSuave();
 initTitleAnimation();
 initAnimaSobre();
-
+initAnimaSkils();

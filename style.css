@@ -155,7 +155,7 @@ h1 {
   width: 30px;
 }
 
-.sobreContainer ul{
+.listSkils{
   margin-top: 20px;
   list-style: none;
   display: flex;
@@ -164,8 +164,20 @@ h1 {
   flex-wrap: wrap;
 }
 
-.sobreContainer li {
-  margin: 15px 40px;
+
+.listSkils li {
+  margin: 5px 30px;
+  padding: 10px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listSkils li:hover {
+  cursor: pointer;
+  scale: 1.4;
+  transform: translateY(-15px);
 }
 
 #formacao {
@@ -444,4 +456,18 @@ footer {
   opacity: 1;
   transition: .8s  ;
   transform: translateX(0);
+}
+
+/* Anima Skils */
+
+.listSkils li p {
+  position: absolute;
+  visibility: hidden;
+  font-size: 10px;
+}
+
+.listSkils li .skillActive {
+  visibility: visible;
+  transform: translateY(10px);
+  transition: 0.3s;
 }
