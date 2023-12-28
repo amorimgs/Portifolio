@@ -214,9 +214,13 @@ h1 {
   font-family: monospace;
   color: #6A6A6A;
   margin-bottom: 40px;
-  border: 1px solid #6A6A6A;
-  border-radius: 4px 45px 4px 45px;
-  box-shadow: 0 0 16px 1px #000003;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 1px #6A6A6A;
+  transition: .3s;
+}
+
+.cardFormacao:hover {
+  scale: 1.1;
 }
 
 .cardFormacao div {
@@ -242,14 +246,16 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  align-items: flex-start;
 }
 
 .outrosCursos > p {
   font-family: 'EB Garamond';
   color: #6A6A6A;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: end;
 
 }
 
