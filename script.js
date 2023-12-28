@@ -39,7 +39,6 @@ const initAnimaSobre = () => {
   const animaSobre = () =>{
     const tamanhoTela = window.innerHeight * .6;
     const sectionSobre = document.querySelector('#sobre');
-    console.log(sectionSobre.getBoundingClientRect().top);
     const visibleSection = (sectionSobre.getBoundingClientRect().top - tamanhoTela) < 0;
     if (visibleSection) {
       sectionSobre.classList.add('activeSobre');
@@ -54,13 +53,14 @@ const initAnimaSobre = () => {
 const initAnimaLinks = () => {
   const animaLinks = () => {
     const linksInternos = document.querySelectorAll('a[href^="#"]');
+    const tamanhoTela = window.innerHeight * .7;
     if (linksInternos.length > 0) {
       linksInternos.forEach((link)=>{
         if (link.hash !== '#home') {
           link.classList.remove('activeLink');
           const section = document.querySelector(link.hash);
           const sectionTop = section.getBoundingClientRect().top;
-          if (sectionTop > -650 && sectionTop < 140) {
+          if (sectionTop > -tamanhoTela && sectionTop < 140) {
             link.classList.add('activeLink');
           } 
         }
